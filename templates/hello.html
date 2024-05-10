@@ -1,4 +1,4 @@
-<!doctype html>
+<!-- <!doctype html>
 <html>
 <head>
   <title>Hi There!</title>
@@ -13,4 +13,19 @@
 </form>
 
 </body>
-</html>
+</html> -->
+
+{% extends 'base.html' %}
+
+{% block title %}Hi There!{% endblock %}
+
+{% block header %}Hi There!{% endblock %}
+{% block content %}
+
+<form action="/greet">
+  What is your name? <input type="text" name="person">
+  <input type="submit">
+</form>
+
+
+{% endblock %}

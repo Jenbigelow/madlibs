@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>The Game</title>
+  <link rel="stylesheet" href="/static/madlibs.css">
 </head>
 <body>
     <form action="/madlib">
@@ -11,9 +12,9 @@
         <input type="text" id="person" name="person" required minlength="4" maxlength="10" size="12" />
     </div>
     <div>
-    <label for="colors">Color:</label>
+      <label for="colors">Color:</label>
       <select name="colors">
-        <option value="green">Green</option>
+        <option id="green" value="green">Green</option>
         <option value="blue">Blue</option>
         <option value="purple">Purple</option>
       </select>
@@ -26,9 +27,8 @@
         <label for="noun">Adjective:</label>
             <input type="text" id="adjective" name="adjective" required minlength="2" maxlength="40" size="12" />
     </div>
-    <div>
         <button type="submit">Submit</button>
-    </div>
+
     </form>
 </body>
 </html>
